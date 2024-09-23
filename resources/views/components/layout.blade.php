@@ -18,9 +18,9 @@
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
-              <a href="/" class="{{ request () ->is('/') ? 'bg-gray-900 text-white' : '' }} rounded-md px-3 py-2 text-sm font medium text-white "  aria-current="page">home</a>
-              <a href="/about" class="{{ request () ->is('/about') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' }} px-3 py-2 text-sm font-medium">about</a>
-              <a href="/contact" class="{{ request () ->is('/contact') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' }} px-3 py-2 text-sm font-medium ">contact</a>
+              <x-nav-link href="/" :active="request()->is('/')" >home</x-nav-link>
+              <x-nav-link href="/jobs" :active="request()->is('jobs')">jobs</x-nav-link>
+              <x-nav-link href="/contact" :active="request()->is('contact')">contact</x-nav-link>
             </div>
           </div>
         </div>
