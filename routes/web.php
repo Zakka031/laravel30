@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
     Route::get('/jobs', function () {
-        return view('job', [
+        return view('jobs', [
     'jobs' => [
     [
         'id' => 1,
